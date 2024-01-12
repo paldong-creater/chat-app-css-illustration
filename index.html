@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fc1600d435.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Chat App Illustration</title>
+  </head>
+  <body>
+    <div class="left-shape"></div>
+    <div id="mobile-design">
+      <div id="rounded-shape"></div>
+      <div id="mobile-profile">
+        <i class="fa-solid fa-angle-left" style="color: #ffffff"></i>
+        <img src="./images/avatar.jpg" alt="" />
+        <div id="profile-info">
+          <h3>Samuel Green</h3>
+          <p>Available to walk</p>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: #ffffff"></i>
+      </div>
+      <div id="chat-container">
+        <div class="bubble receive">
+          <p>That sounds great. I'd be happy to discuss more.</p>
+        </div>
+        <div class="bubble receive">
+          <p>Could you send over some pictures of your dog. please?</p>
+        </div>
+
+        <div class="chat-picture send">
+          <img src="./images/dog-image-1.jpg" alt="" />
+          <img src="./images/dog-image-2.jpg" alt="" />
+          <img src="./images/dog-image-3.jpg" alt="" />
+        </div>
+        <div class="bubble send">
+          <p>Here are a few pictures. She's a happy girl!!!</p>
+        </div>
+        <div class="bubble send">
+          <p>Can you make it?</p>
+        </div>
+        <div class="bubble receive">
+          <p>
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+        </div>
+        <div class="chat-radio bubble receive">
+          <input type="radio" name="hourly" value="30min" />
+          <p>30 minute walk</p>
+          <span class="charges">$29</span>
+        </div>
+        <div class="chat-radio bubble receive">
+          <input type="radio" name="hourly" value="1hour" />
+          <p>1 hour walk</p>
+          <span class="charges">$49</span>
+        </div>
+
+        <div id="msg-placeholder">
+          <p>Type a message...</p>
+          <div class="btn-submit">
+            <i class="fa-solid fa-angle-right" style="color: #fff"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <h1>Simple booking</h1>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This
+        makes it easy to discuss arrangements and make bookings. Once the walk
+        has been completed you can rate your walker and book again all through
+        the chat.
+      </p>
+    </div>
+    <div class="right-shape"></div>
+  </body>
+</html>

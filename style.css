@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  background-color: hsl(270, 20%, 96%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#mobile-design {
+  position: relative;
+  width: 240px;
+  height: 490px;
+  border: 8px solid hsl(0, 0%, 100%);
+  margin: 50px auto 10px auto;
+  border-radius: 30px;
+  background-color: hsl(270, 20%, 96%);
+  box-shadow: 5px 10px 50px #888888;
+}
+
+#mobile-design h3 {
+  font-size: 0.75rem;
+  line-height: 1;
+  color: hsl(0, 0%, 100%);
+}
+
+#mobile-design p {
+  font-size: 0.5rem;
+  color: hsl(276, 100%, 81%);
+}
+
+#rounded-shape {
+  position: absolute;
+  top: -8px;
+  left: 40px;
+  width: 130px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+#mobile-profile {
+  border-radius: 20px 20px 0 0;
+  padding: 1.5em 0 0.5em 5%;
+  display: grid;
+  grid-template-columns: 7% 17% 68% 8%;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+}
+
+#mobile-profile img {
+  width: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+#chat-container {
+  display: grid;
+  padding: 0.75em 0.5em;
+}
+
+.bubble {
+  max-width: 65%;
+  padding: 0.4em;
+  margin-bottom: 0.4em;
+  border-radius: 10px 10px 10px 5px;
+}
+
+.send {
+  border-radius: 10px 10px 5px 10px;
+  justify-self: end;
+  background: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+}
+
+.receive {
+  background: hsl(276, 55%, 90%);
+  color: hsl(276, 55%, 52%);
+}
+
+.chat-picture {
+  background: none;
+}
+
+.chat-picture img {
+  width: 40px;
+  border-radius: 10px;
+}
+
+.chat-radio {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(276, 55%, 90%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.charges {
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 100%);
+}
+
+#msg-placeholder {
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(0, 0%, 100%);
+}
+
+#msg-placeholder p {
+  margin-left: 2em;
+  color: hsl(206, 6%, 79%);
+}
+
+.btn-submit {
+  width: 23px;
+  height: 23px;
+  margin-right: 0.3em;
+  border-radius: 50%;
+  background: hsl(271, 36%, 24%);
+}
+
+.fa-angle-right {
+  transform: translateX(80%);
+}
+
+#about {
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 2em;
+  text-align: center;
+}
+
+#about h1 {
+  color: hsl(271, 36%, 24%);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+#about p {
+  color: hsl(270, 7%, 64%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.left-shape {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  z-index: -1;
+  width: 500px;
+  height: 550px;
+  border-radius: 0 0 350px 350px;
+  background: black;
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+}
+
+@media (min-width: 780px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mobile-design {
+    margin: 0;
+    margin-right: 8%;
+  }
+
+  #about {
+    width: 450px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  #about h1 {
+    margin-bottom: 0.4em;
+  }
+
+  .left-shape {
+    top: 0;
+    right: 83%;
+    /* width: 30%; */
+    width: 500px;
+    height: 650px;
+    border-radius: 0 0 350px 350px;
+  }
+
+  .right-shape {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    z-index: -1;
+    width: 500px;
+    height: 650px;
+    border-radius: 350px 350px 0 0;
+    background: hsl(276, 55%, 90%);
+  }
+}
+
+@media (min-width: 1000px) {
+  .left-shape {
+    right: 75%;
+  }
+}
